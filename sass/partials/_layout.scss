@@ -1,0 +1,41 @@
+section{
+    position: relative;
+    background-color: $white;
+    height: 100vh;
+    min-height: 460px;
+    max-height: 750px;
+    .layout{
+        max-width :864px;
+        margin: 0 auto;
+        color: $black;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    &.globalwarming{
+        margin-top: 750px;
+    }
+    &.plastic{
+        z-index: 2;
+    }
+}
+.div-layout{
+    position: fixed;
+    top:50%;
+    left: 80px;
+    transform: translateY(-50%);
+    h1,h2{
+        font-size: 48px;
+        font-weight: 900;
+        color: $white;
+        span{
+            color: $green;
+        }
+    }
+    p{
+        font-size: 17px;
+        font-weight: 900;
+        color: $white;
+    }
+}

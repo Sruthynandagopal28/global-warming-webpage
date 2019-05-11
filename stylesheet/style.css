@@ -1,0 +1,207 @@
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.quote {
+  color: #181818;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.content {
+  font-size: 17px;
+  text-align: justify;
+  margin-bottom: 54px;
+}
+.content span {
+  font-weight: bold;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  min-height: 460px;
+  max-height: 750px;
+  position: relative;
+}
+
+section {
+  position: relative;
+  background-color: #ffffff;
+  height: 100vh;
+  min-height: 460px;
+  max-height: 750px;
+}
+section .layout {
+  max-width: 864px;
+  margin: 0 auto;
+  color: #181818;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.globalwarming {
+  margin-top: 750px;
+}
+section.plastic {
+  z-index: 2;
+}
+
+.div-layout {
+  position: fixed;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+.div-layout h1, .div-layout h2 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #ffffff;
+}
+.div-layout h1 span, .div-layout h2 span {
+  color: #4ad8bd;
+}
+.div-layout p {
+  font-size: 17px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.herosection {
+  background-image: url("../images/hero-image.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 0 0;
+  -ms-background-size: 0 0;
+  -moz-background-size: 0 0;
+  -o-background-size: 0 0;
+  background-size: 0 0;
+  background-size: cover;
+  height: 750px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .herosection {
+    background-image: url("../images/hero-image@2x.png");
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min--moz-device-pixel-ratio: 3), screen and (-moz-min-device-pixel-ratio: 3), screen and (-o-min-device-pixel-ratio: 3/1), screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .herosection {
+    background-image: url("../images/hero-image@3x.png");
+  }
+}
+.herosection div.div-layout {
+  max-width: 288px;
+  position: absolute;
+}
+
+div.earth-image {
+  background-image: url("../images/1-p-1-c.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 0 0;
+  -ms-background-size: 0 0;
+  -moz-background-size: 0 0;
+  -o-background-size: 0 0;
+  background-size: 0 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  div.earth-image {
+    background-image: url("../images/1-p-1-c@2x.png");
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min--moz-device-pixel-ratio: 3), screen and (-moz-min-device-pixel-ratio: 3), screen and (-o-min-device-pixel-ratio: 3/1), screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  div.earth-image {
+    background-image: url("../images/1-p-1-c@3x.png");
+  }
+}
+div.sealevel {
+  background-image: url("../images/sea-level.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 0 0;
+  -ms-background-size: 0 0;
+  -moz-background-size: 0 0;
+  -o-background-size: 0 0;
+  background-size: 0 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  div.sealevel {
+    background-image: url("../images/sea-level@2x.png");
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min--moz-device-pixel-ratio: 3), screen and (-moz-min-device-pixel-ratio: 3), screen and (-o-min-device-pixel-ratio: 3/1), screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  div.sealevel {
+    background-image: url("../images/sea-level@3x.png");
+  }
+}
+div.plastic-img {
+  background-image: url("../images/plastic-ocean.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 0 0;
+  -ms-background-size: 0 0;
+  -moz-background-size: 0 0;
+  -o-background-size: 0 0;
+  background-size: 0 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  div.plastic-img {
+    background-image: url("../images/plastic-ocean@2x.png");
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min--moz-device-pixel-ratio: 3), screen and (-moz-min-device-pixel-ratio: 3), screen and (-o-min-device-pixel-ratio: 3/1), screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  div.plastic-img {
+    background-image: url("../images/plastic-ocean@3x.png");
+  }
+}
+div.greenhouse-img {
+  background-image: url("../images/climate-change.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 0 0;
+  -ms-background-size: 0 0;
+  -moz-background-size: 0 0;
+  -o-background-size: 0 0;
+  background-size: 0 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  div.greenhouse-img {
+    background-image: url("../images/climate-change@2x.png");
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min--moz-device-pixel-ratio: 3), screen and (-moz-min-device-pixel-ratio: 3), screen and (-o-min-device-pixel-ratio: 3/1), screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  div.greenhouse-img {
+    background-image: url("../images/climate-change@3x.png");
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

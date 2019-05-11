@@ -1,0 +1,30 @@
+@mixin background($image, $extension, $width, $height,  $repeat) {
+  background-image: url($image + '.' + $extension);
+  background-repeat: $repeat;
+  -webkit-background-size: $width $height;
+  -ms-background-size: $width $height;
+  -moz-background-size: $width $height;
+  -o-background-size: $width $height;
+  background-size: $width $height;
+       
+  @media 
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (   min--moz-device-pixel-ratio: 2),
+  screen and (   -moz-min-device-pixel-ratio: 2),
+  screen and (     -o-min-device-pixel-ratio: 2/1),
+  screen and (        min-device-pixel-ratio: 2),
+  screen and (             min-resolution: 192dpi), 
+  screen and (             min-resolution: 2dppx) {    
+     background-image: url($image + '@2x' + '.' + $extension);
+  }
+  @media 
+  screen and (-webkit-min-device-pixel-ratio: 3),
+  screen and (   min--moz-device-pixel-ratio: 3),
+  screen and (   -moz-min-device-pixel-ratio: 3),
+  screen and (     -o-min-device-pixel-ratio: 3/1),
+  screen and (        min-device-pixel-ratio: 3),
+  screen and (             min-resolution: 288dpi), 
+  screen and (             min-resolution: 3dppx) {    
+     background-image: url($image + '@3x' + '.' + $extension);
+  }
+}

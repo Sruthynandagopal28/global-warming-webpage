@@ -1,0 +1,22 @@
+div{
+    &.earth-image{
+        @include background('../images/1-p-1-c','png',0, 0, no-repeat);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &.sealevel{
+        @include background('../images/sea-level','png',0, 0, no-repeat);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &.plastic-img{
+        @include background('../images/plastic-ocean','png',0, 0, no-repeat);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &.greenhouse-img{
+        @include background('../images/climate-change','png',0, 0, no-repeat);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}

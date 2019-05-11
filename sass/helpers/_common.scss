@@ -1,0 +1,20 @@
+.quote{
+    color: #181818;
+    font-size: 30px;
+    font-weight: 500;
+}
+.content{
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 54px;
+    span{
+        font-weight: bold;
+    }
+}
+.bg{
+    width: 100vw;
+    height: 100vh;
+    min-height: 460px;
+    max-height: 750px;
+    position: relative;
+}

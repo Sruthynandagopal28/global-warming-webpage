@@ -1,0 +1,15 @@
+.herosection{
+    @include background('../images/hero-image','png',0, 0, no-repeat);
+    background-size: cover;
+    height: 750px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    div{
+        &.div-layout{
+            max-width: 288px;
+            position: absolute;
+        }
+    }
+}
